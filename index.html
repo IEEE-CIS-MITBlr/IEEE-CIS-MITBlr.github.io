@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IEEE CIS MIT Bengaluru">
+    <meta name="author" content="IEEE CIS Team">
+    <title>IEEE CIS MIT Bengaluru</title>
+    <!-- Font and Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Styling -->
+    <style>
+        :root {
+            --primary-color: #007ACC; /* IEEE CIS Light Blue */
+            --secondary-color: #1A1A1A; /* Dark Background */
+            --highlight-color: #00A8E8; /* Lighter Blue Highlight */
+            --text-color: #FFFFFF; /* White Text */
+            --accent-color: #2C3E50; /* Dark Blue Accent */
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--text-color);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: var(--accent-color);
+            padding: 10px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: var(--highlight-color);
+        }
+
+        section {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: var(--accent-color);
+            border-radius: 8px;
+        }
+
+        .submenu {
+            display: none;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: var(--primary-color);
+        }
+
+        .submenu li {
+            padding: 8px 15px;
+        }
+
+        .submenu li a {
+            color: var(--text-color);
+            text-decoration: none;
+        }
+
+        .submenu li a:hover {
+            color: var(--highlight-color);
+        }
+
+        nav .dropdown:hover .submenu {
+            display: block;
+            position: absolute;
+            margin-top: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        IEEE Computational Intelligence Society - MIT Bengaluru
+    </header>
+    <nav>
+        <a href="#activities">Activities</a>
+        <a href="#articles">Articles</a>
+        <a href="#contact-us">Contact Us</a>
+        <div class="dropdown">
+            <a href="#activities">Activities</a>
+            <ul class="submenu">
+                <li><a href="#college-events">College Events</a></li>
+                <li><a href="#task-forces">Task Forces</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="activities">
+        <h1>Activities</h1>
+        <p>Explore our initiatives and events:</p>
+        <h2 id="college-events">College Events</h2>
+        <p>Details about events organized on campus.</p>
+        <h2 id="task-forces">Task Forces</h2>
+        <p>Learn about the task forces and special interest groups at IEEE CIS.</p>
+    </section>
+    <section id="articles">
+        <h1>Articles</h1>
+        <p>Read insightful articles from IEEE CIS members.</p>
+    </section>
+    <section id="contact-us">
+        <h1>Contact Us</h1>
+        <p>Get in touch with the IEEE CIS team at MIT Bengaluru.</p>
+        <p>Email: ieee-cis-mitblr@example.com</p>
+    </section>
+    <footer>
+        &copy; 2024 IEEE CIS MIT Bengaluru. All Rights Reserved.
+    </footer>
+</body>
+</html>
